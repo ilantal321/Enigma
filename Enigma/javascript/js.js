@@ -116,7 +116,7 @@ class EnigmaRoter{
   document.addEventListener('keydown', (event) => {
     var name = event.key;
     var code = event.code;
-    if ((name>='a' && name <='z')||(name>='A' && name <='Z'))
+    if ((event.which>=65 && event.which<=90))
     {
       name=name.toLowerCase();
       clickn(name);
