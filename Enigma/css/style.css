@@ -1,0 +1,119 @@
+body {
+background-color: lightblue;
+width: 80%;
+margin-left: auto;
+margin-right: auto;
+}
+h1{
+  text-align: center;
+}
+div.Keyboard{
+  width: 80%;
+  margin-left: 10%;
+  margin-right: 10%;
+  background-color: #505050;
+  border-color: lightgrey;
+  border-style: solid;
+  border-width: 5px;
+  align-items: center;
+}
+div.Roters{
+  width: 80%;
+  margin-left: 10%;
+  margin-right: 10%;
+  background-color: lightgray;
+  border-color: lightgrey;
+  border-style: solid;
+  border-width: 5px;
+  align-items: center;
+}
+div.ReturnKeyboard{
+  width: 80%;
+  margin-left: 10%;
+  margin-right: 10%;
+  background-color: #999999;
+  border-color: lightgrey;
+  border-style: solid;
+  border-width: 5px;
+}
+ul.ulKeyboard{
+  justify-content: center;
+  display: flex;
+  text-align: center;
+  overflow: hidden;
+  margin: auto;
+  list-style-type: none;
+}
+ul.ulRoters
+{
+  justify-content: center;
+  border-style: flex;
+  text-align: center;
+  overflow: hidden;
+  margin: auto;
+  list-style-type: none;
+}
+ul.Roters
+{
+  justify-content: center;
+  display: flex;
+  text-align: center;
+  overflow: hidden;
+  margin: auto;
+  list-style-type: none;
+}
+.Keyboardbutton{
+    background-color: whitesmoke;
+    border-style: solid;
+    width: 50px;
+    height: 50px;
+    color: black;
+    padding: 12px 12px;
+    text-align: center;
+    border-width: 5px;
+    border-color: darkgrey;
+    font-size: 15;
+    border-radius: 100%;
+    margin-top: 5px;
+    margin-right: 20px;
+    margin-bottom: 7px;
+    
+}
+.RoterBtn{
+  background-color: whitesmoke;
+  border-style: solid;
+  border-radius: 50%;
+  margin-top: 5px;
+  margin-bottom: 7px;
+  
+}
+.KBBtn {
+color: white;
+text-align: center;
+text-decoration: none;
+}
+.KBBtn {
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  }
+.liroters
+{
+  color: white;
+  text-align: center;
+  text-decoration: none;
+}
+p
+{
+  margin-top: 5px;
+  margin-bottom: 7px;
+}
+#Btnplus
+{
+  border-style: solid;
+  border-width: 1px;
+  border-color: black;
+  margin-top: 5px;
+  margin-right: 75px;
+  margin-bottom: 7px;
+}

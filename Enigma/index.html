@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="javascript/js.js"></script>
+    <title>Enigma</title>
+</head>
+<body>
+    <h1>Enigma Simulator</h1>
+    <hr>
+    <div class="ReturnKeyboard">
+        <ul class="ulKeyboard">
+            <li id="KBBtn"><input id="Returnq" class=Keyboardbutton type="button" value="q"></li>
+            <li id="KBBtn"><input id="Returnw" class=Keyboardbutton type="button" value="w"></li>
+            <li id="KBBtn"><input id="Returne" class=Keyboardbutton type="button" value="e"></li>
+            <li id="KBBtn"><input id="Returnr" class=Keyboardbutton type="button" value="r"></li>
+            <li id="KBBtn"><input id="Returnt" class=Keyboardbutton type="button" value="t"></li>
+            <li id="KBBtn"><input id="Returny" class=Keyboardbutton type="button" value="y"></li>
+            <li id="KBBtn"><input id="Returnu" class=Keyboardbutton type="button" value="u"></li>
+            <li id="KBBtn"><input id="Returni" class=Keyboardbutton type="button" value="i"></li>
+            <li id="KBBtn"><input id="Returno" class=Keyboardbutton type="button" value="o"></li>
+            <li id="KBBtn"><input id="Returnp" class=Keyboardbutton type="button" value="p"></li>
+        </ul>
+        <hr>
+        <ul class="ulKeyboard">
+            <li id="KBBtn"><input id="Returna" class=Keyboardbutton type="button" value="a"></li>
+            <li id="KBBtn"><input id="Returns" class=Keyboardbutton type="button" value="s"></li>
+            <li id="KBBtn"><input id="Returnd" class=Keyboardbutton type="button" value="d"></li>
+            <li id="KBBtn"><input id="Returnf" class=Keyboardbutton type="button" value="f"></li>
+            <li id="KBBtn"><input id="Returng" class=Keyboardbutton type="button" value="g"></li>
+            <li id="KBBtn"><input id="Returnh" class=Keyboardbutton type="button" value="h"></li>
+            <li id="KBBtn"><input id="Returnj" class=Keyboardbutton type="button" value="j"></li>
+            <li id="KBBtn"><input id="Returnk" class=Keyboardbutton type="button" value="k"></li>
+            <li id="KBBtn"><input id="Returnl" class=Keyboardbutton type="button" value="l"></li>
+        </ul>
+        <hr>
+        <ul class="ulKeyboard">
+            <li id="KBBtn"><input id="Returnz" class=Keyboardbutton type="button" value="z"></li>
+            <li id="KBBtn"><input id="Returnx" class=Keyboardbutton type="button" value="x"></li>
+            <li id="KBBtn"><input id="Returnc" class=Keyboardbutton type="button" value="c"></li>
+            <li id="KBBtn"><input id="Returnv" class=Keyboardbutton type="button" value="v"></li>
+            <li id="KBBtn"><input id="Returnb" class=Keyboardbutton type="button" value="b"></li>
+            <li id="KBBtn"><input id="Returnn" class=Keyboardbutton type="button" value="n"></li>
+            <li id="KBBtn"><input id="Returnm" class=Keyboardbutton type="button" value="m"></li>
+        </ul>
+</div>
+<hr>
+<div class="Roters">
+    <ul class="Roters">
+        <ul class="ulRoters">
+            <li id=""><p>Roters place 3</p></li>
+            <li><p id="roterplace3">Roter 3</p></li>
+            <li id=""><input id="" class=RoterBtn type="button" onclick="clickadd('3')" value="+"></li>
+            <li><p id="place3">1</p></li>
+            <li id=""><input id="" class=RoterBtn type="button" onclick="clicksub(3)" value="-"></li>
+        </ul>  
+        <ul class="ulRoters">
+            <li id=""><input id="" class=RoterBtn type="button" onclick="Switch(1,2)" value="Switch"></li>
+        </ul>  
+        <ul class="ulRoters">
+            <li id=""><p>Roters place 2</p></li>
+            <li><p id="roterplace2">Roter 2</p></li>
+            <li id=""><input id="" class=RoterBtn type="button" onclick="clickadd('2')" value="+"></li>
+            <li><p id="place2">1</p></li>
+            <li id=""><input id="" class=RoterBtn type="button" onclick="clicksub(2)" value="-"></li>
+        </ul>  
+        <ul class="ulRoters">
+            <li id=""><input id="" class=RoterBtn type="button" onclick="Switch(0,1)" value="Switch"></li>
+        </ul>  
+        <ul class="ulRoters">
+            <li id=""><p>Roters place 1</p></li>
+            <li><p id="roterplace1">Roter 1</p></li>
+            <li id=""><input id="" class=RoterBtn type="button" onclick="clickadd('1')" value="+"></li>
+            <li><p id="place1">1</p></li>
+            <li id=""><input id="" class=RoterBtn type="button" onclick="clicksub(1)" value="-"></li>
+        </ul>
+        <ul class="ulRoters">
+            <li id=""><input id="" class=RoterBtn type="button" onclick="Switch(0,3)" value="Switch"></li>
+            <li id=""><input id="" class=RoterBtn type="button" onclick="Switch(0,4)" value="Switch"></li>
+        </ul>  
+        <ul class="ulRoters">
+            <li><p id="roterplace4">Roters 4</p></li>
+            <li><p id="roterplace5">Roter 5</p></li>
+        </ul>  
+    </ul>  
+</div>
+
+<hr>
+    <div class="Keyboard">
+            <ul class="ulKeyboard">
+                <li id="KBBtn"><input id="q" class=Keyboardbutton type="button" onclick="clickn('q')" value="q"></li>
+                <li id="KBBtn"><input id="w" class=Keyboardbutton type="button" onclick="clickn('w')" value="w"></li>
+                <li id="KBBtn"><input id="e" class=Keyboardbutton type="button" onclick="clickn('e')" value="e"></li>
+                <li id="KBBtn"><input id="r" class=Keyboardbutton type="button" onclick="clickn('r')" value="r"></li>
+                <li id="KBBtn"><input id="t" class=Keyboardbutton type="button" onclick="clickn('t')" value="t"></li>
+                <li id="KBBtn"><input id="y" class=Keyboardbutton type="button" onclick="clickn('y')" value="y"></li>
+                <li id="KBBtn"><input id="u" class=Keyboardbutton type="button" onclick="clickn('u')" value="u"></li>
+                <li id="KBBtn"><input id="i" class=Keyboardbutton type="button" onclick="clickn('i')" value="i"></li>
+                <li id="KBBtn"><input id="o" class=Keyboardbutton type="button" onclick="clickn('o')" value="o"></li>
+                <li id="KBBtn"><input id="p" class=Keyboardbutton type="button" onclick="clickn('p')" value="p"></li>
+            </ul>
+            <hr>
+            <ul class="ulKeyboard">
+                <li id="KBBtn"><input id="a" class=Keyboardbutton type="button" onclick="clickn('a')" value="a"></li>
+                <li id="KBBtn"><input id="s" class=Keyboardbutton type="button" onclick="clickn('s')" value="s"></li>
+                <li id="KBBtn"><input id="d" class=Keyboardbutton type="button" onclick="clickn('d')" value="d"></li>
+                <li id="KBBtn"><input id="f" class=Keyboardbutton type="button" onclick="clickn('f')" value="f"></li>
+                <li id="KBBtn"><input id="g" class=Keyboardbutton type="button" onclick="clickn('g')" value="g"></li>
+                <li id="KBBtn"><input id="h" class=Keyboardbutton type="button" onclick="clickn('h')" value="h"></li>
+                <li id="KBBtn"><input id="j" class=Keyboardbutton type="button" onclick="clickn('j')" value="j"></li>
+                <li id="KBBtn"><input id="k" class=Keyboardbutton type="button" onclick="clickn('k')" value="k"></li>
+                <li id="KBBtn"><input id="l" class=Keyboardbutton type="button" onclick="clickn('l')" value="l"></li>
+            </ul>
+            <hr>
+            <ul class="ulKeyboard">
+                <li id="KBBtn"><input id="z" class=Keyboardbutton type="button" onclick="clickn('z')" value="z"></li>
+                <li id="KBBtn"><input id="x" class=Keyboardbutton type="button" onclick="clickn('x')" value="x"></li>
+                <li id="KBBtn"><input id="c" class=Keyboardbutton type="button" onclick="clickn('c')" value="c"></li>
+                <li id="KBBtn"><input id="v" class=Keyboardbutton type="button" onclick="clickn('v')" value="v"></li>
+                <li id="KBBtn"><input id="b" class=Keyboardbutton type="button" onclick="clickn('b')" value="b"></li>
+                <li id="KBBtn"><input id="n" class=Keyboardbutton type="button" onclick="clickn('n')" value="n"></li>
+                <li id="KBBtn"><input id="m" class=Keyboardbutton type="button" onclick="clickn('m')" value="m"></li>
+            </ul>
+    </div>
+    <div class="input">
+        <h4 id="screen">Input:</h4>
+        <h4 id="screenout">output:</h4>
+    </div>
+</body>
+</html>
